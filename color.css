@@ -1,23 +1,22 @@
-const canvas = document.querySelector('.myCanvas');
-const width = canvas.width = window.innerWidth;
-const height = canvas.height = window.innerHeight - 85;
-const ctx = canvas.getContext('2d');
-
-ctx.fillStyle = 'rgb(0,0,0)';
-ctx.fillRect(0,0,width,height);
-
-const colorPicker = document.querySelector('input[type="color"]');
-const sizePicker = document.querySelector('input[type="range"]');
-const output = document.querySelector('.output');
-const clearBtn = document.querySelector('input[type="button"]');
-
 function degToRad(degrees) {
   return degrees * Math.PI / 180;
 };
 sizePicker.oninput = () => {
   output.textContent = sizePicker.value;
 }
+document.querySelector('.myCanvas');{
 
+}
+canvas.width {
+window.innerWidth;
+
+}
+canvas.getContext{
+('2d');    
+}
+canvas.height 
+{window.innerHeight = (85);
+}
 let curX;
 let curY;
 let pressed = false;
@@ -36,8 +35,8 @@ canvas.onmouseup = () => {
 }
 
 clearBtn.onclick = () => {
-  ctx.fillStyle = 'rgb(0,0,0)';
-  ctx.fillRect(0,0,width,height);
+  ctx.fillStyle rgb(0,0,0);
+  ctx.fillRect (0,0,width,height);
 }
 
 function draw() {
