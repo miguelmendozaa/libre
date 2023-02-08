@@ -1,53 +1,26 @@
-function degToRad(degrees) {
-  return degrees * Math.PI / 180;
-};
-sizePicker.oninput = () => {
-  output.textContent = sizePicker.value;
-}
-document.querySelector('.myCanvas');{
-
-}
-canvas.width {
-window.innerWidth;
-
-}
-canvas.getContext{
-('2d');    
-}
-canvas.height 
-{window.innerHeight = (85);
-}
-let curX;
-let curY;
-let pressed = false;
-
-document.onmousemove = (e) => {
-  curX = e.pageX;
-  curY = e.pageY;
+body {
+  font-family: "bookman old style";
 }
 
-canvas.onmousedown = () => {
-  pressed = true;
-};
-
-canvas.onmouseup = () => {
-  pressed = false;
+:target {
+  color: lightyellow;
+  background: indianred;
 }
 
-clearBtn.onclick = () => {
-  ctx.fillStyle rgb(0,0,0);
-  ctx.fillRect (0,0,width,height);
+h3,
+h1 {
+  color: indianred;
 }
 
-function draw() {
-  if (pressed) {
-    ctx.fillStyle = colorPicker.value;
-    ctx.beginPath();
-    ctx.arc(curX, curY - 85, sizePicker.value, degToRad(0), degToRad(360), false);
-    ctx.fill();
-  }
-
-  requestAnimationFrame(draw);
+img {
+  border: 3px dashed indianred;
 }
 
-draw();
+body {
+  counter-reset: srl;
+}
+
+h3::before {
+  counter-increment: srl;
+  content: counter(srl)". ";
+}
